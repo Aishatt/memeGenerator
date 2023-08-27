@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+body{
+  margin: 0;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: #760885;
+  color: whitesmoke;
+  padding: 10px;
+ 
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 
-.App-link {
-  color: #61dafb;
+.links a {
+  text-decoration: none;
+  color: #333;
+  padding: 5px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.links a:hover {
+  background-color: #333;
+  color: #fff;
 }
+.container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  width: 55vw;  
+  margin: 0 auto;
+  padding: 20px;
+  border: 2px solid rgba(148, 111, 183, 0.119);
+  margin-top: 20px;
+  @media screen and (max-width: 60em) {
+    width: 80vw;
+   }
+}
+.container input{
+  padding: 20px;
+  min-width: 80%;
+}
+ .meme--img {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 60vw;
+  height: 50vh;
+  @media screen and (max-width: 60em) {
+    width: 90vw;
+   }
+}
+.meme--img img{
+  width: 100%;
+}
+
+.button {
+  grid-column: span 2;
+  padding: 20px;
+  min-width: 100%;
+  background-color: #8f0aa1ac;
+  color: #fff;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+}
+
