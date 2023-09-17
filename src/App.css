@@ -62,8 +62,8 @@ nav {
   grid-column: span 2;
   padding: 20px;
   min-width: 100%;
-  background-color: #8f0aa1ac;
-  color: #fff;
+  background-color: #d25fe1ac;
+  color: rgb(78, 9, 9);
   cursor: pointer;
   border: none;
   border-radius: 10px;
